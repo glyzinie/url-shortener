@@ -1,0 +1,23 @@
+{
+  "name": "url-shortener",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bun build src/index.ts --outdir dist",
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
+  "devDependencies": {
+   "@types/bun": "latest",
+   "wrangler": "3.53.0"
+ },
+ "peerDependencies": {
+   "typescript": "^5.0.0"
+   "wrangler": "^3.0.0"
+  },
+  "dependencies": {
+    "@cloudflare/workers-types": "^4.20240423.0",
+    "hono": "^4.2.9"
+  }
+}
