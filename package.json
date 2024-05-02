@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "bun build src/index.ts --outdir dist",
-    "deploy": "wrangler deploy",
+    "deploy": "wrangler deploy --experimental-versions",
     "dev": "wrangler dev",
     "start": "wrangler dev"
   },
@@ -13,7 +13,7 @@
    "wrangler": "3.53.0"
  },
  "peerDependencies": {
-   "typescript": "^5.0.0"
+   "typescript": "^5.0.0",
    "wrangler": "^3.0.0"
   },
   "dependencies": {
